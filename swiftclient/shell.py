@@ -1461,6 +1461,7 @@ def main(arguments=None):
 
     version = client_version
     parser = argparse.ArgumentParser(
+        fromfile_prefix_chars='@',
         add_help=False, formatter_class=HelpFormatter, usage='''
 %(prog)s [--version] [--help] [--os-help] [--snet] [--verbose]
              [--debug] [--info] [--quiet] [--auth <auth_url>]
